@@ -21,12 +21,7 @@ class Page{
 
   async parseMainPage( dom ){
     const collection = select(dom, 'table.table--single-md .link');
-    // debug purposes
-    let amount = 0;
     for( let key in collection ) {
-       if(amount ++ > 2){
-           continue;
-       }
       const company = collection[key];
       this.numberOfCompanies ++;
       const href = company.attribs.href;
