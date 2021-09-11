@@ -2,5 +2,7 @@
 Parser für gelbeseiten.de
 
 # how to run:
-npm i
+```bash
+npm install
 npm run-script run
+```
